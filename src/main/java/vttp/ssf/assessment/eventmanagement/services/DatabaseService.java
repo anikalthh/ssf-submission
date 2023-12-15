@@ -53,9 +53,9 @@ public class DatabaseService {
             })
             .toList();
 
-        System.out.printf("\n ------------ LIST OF EVENTS LOADED ------------ \n%s", listOfEvents);
+        System.out.printf("\n ------------ LIST OF EVENTS LOADED ------------ \n%s\n", listOfEvents);
 
-        System.out.println("---- DETAILS ----");
+        System.out.println("\n---- DETAILS ----\n");
 
         for (Event e : listOfEvents) {
             System.out.printf("EVENT ID: %s\n", e.getEventId());

@@ -1,6 +1,5 @@
 package vttp.ssf.assessment.eventmanagement;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -30,8 +29,5 @@ public class EventmanagementApplication implements CommandLineRunner {
 		for (Event e : listOfEvents) {
 			dSvc.saveRecord(e);
 		}
-		System.out.printf("\nNumber of events: %s\n", dSvc.getNumberOfEvents());
-
-		System.out.printf("\nget event of index 3: %s\n id: %s\n name: %s\n", dSvc.getEvent(3), dSvc.getEvent(3).getEventId(), dSvc.getEvent(3).getEventName());
 	}
 }
