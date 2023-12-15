@@ -19,7 +19,7 @@ public class EventController {
 	private DatabaseService dSvc;
 
 	//TODO: Task 5
-	@GetMapping("/events")
+	@GetMapping("/events/listing")
 	public String displayEvents(Model m) {
 		List<Event> listOfEvents = dSvc.getAllEvents();
 		m.addAttribute("events", listOfEvents);
